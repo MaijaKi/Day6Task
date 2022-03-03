@@ -55,3 +55,32 @@ Console.WriteLine(sum);
 var substraction = Math.Abs(C - D);
 string output = substraction.ToString("#.00");
 Console.WriteLine(output);
+
+
+Console.WriteLine("******************************************");
+
+var time = -2;
+var day = 12;
+var month = 5;
+var year = 2021;
+
+if (time < 0 || time > 24)
+{ Console.WriteLine("Please check the time!"); }
+
+if (time < 12 && time >= 0)
+{ Console.WriteLine("Good Morning Sunshine!");}
+if (time > 13 && time < 19)
+{ Console.WriteLine("Good Afternoon. Work Hard!");}
+if (time > 20 && time < 24)
+{ Console.WriteLine("Good Evening. Get some rest!");}
+
+if (day < 1 || day > 31)
+{ Console.WriteLine("Please check the date!"); }
+
+if (month < 1 || month > 12)
+{ Console.WriteLine("Please check the month!"); }
+
+if (year < 0)
+{ Console.WriteLine("Please check the year!"); }
+
+Console.WriteLine($"{year}/{month}/{day}");
