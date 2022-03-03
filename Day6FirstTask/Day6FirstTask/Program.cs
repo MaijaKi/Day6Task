@@ -30,3 +30,28 @@ if (A % 2 == 0)
 { Console.WriteLine($"{A} is even number"); }
 if (B % 2 == 0)
 { Console.WriteLine($"{B} is even number"); }
+
+if (A < 0)
+{ Console.WriteLine($"{A} negative bumber"); }
+if (B < 0)
+{ Console.WriteLine($"{B} negative bumber"); }
+
+if (A > 0)
+{ Console.WriteLine($"{A} positive bumber"); }
+if (B > 0)
+{ Console.WriteLine($"{B} positive bumber"); }
+
+if (A < 100)
+{ Console.WriteLine($"{A} less than 100"); }
+if (B < 100)
+{ Console.WriteLine($"{B} less than 100"); }
+
+double C = 1.5;
+double D = 3.4;
+
+var sum = Math.Round(C + D);
+Console.WriteLine(sum);
+
+var substraction = Math.Abs(C - D);
+string output = substraction.ToString("#.00");
+Console.WriteLine(output);
