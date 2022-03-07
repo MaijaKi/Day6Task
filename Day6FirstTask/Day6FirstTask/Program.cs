@@ -100,6 +100,10 @@ day = Convert.ToInt32(day1);
 month = Convert.ToInt32(month1);
 year = Convert.ToInt32(year1);
 
+string Year2 = String.Format("{0:D4}", year);
+string Day2 = String.Format("{0:D2}", day);
+string Month2 = String.Format("{0:D2}", month);
+
 if (day < 1 || day > 31)
 { Console.WriteLine("Please check the date!"); }
 
@@ -113,6 +117,6 @@ Console.WriteLine("Please select the date formatting. 1 - YYYY/MM/DD, 2- YYYY.MM
 string Format = Console.ReadLine();
 
 if (Format == "1")
-{ Console.WriteLine($"Your date is { year}/{ month}/{ day}"); }
+{ Console.WriteLine($"Your date is { Year2}/{ Month2}/{ Day2}"); }
 else if (Format == "2")
-{ Console.WriteLine($"Your date is { year}.{ month}.{ day}"); }
+{ Console.WriteLine($"Your date is { Year2}.{ Month2}.{ Day2}"); }
