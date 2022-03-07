@@ -84,3 +84,35 @@ if (year < 0)
 { Console.WriteLine("Please check the year!"); }
 
 Console.WriteLine($"{year}/{month}/{day}");
+
+Console.WriteLine("******************************************");
+
+Console.WriteLine("Please write day");
+string day1 = Console.ReadLine();
+
+Console.WriteLine("Please write month");
+string month1 = Console.ReadLine();
+
+Console.WriteLine("Please write year");
+string year1 = Console.ReadLine();
+
+day = Convert.ToInt32(day1);
+month = Convert.ToInt32(month1);
+year = Convert.ToInt32(year1);
+
+if (day < 1 || day > 31)
+{ Console.WriteLine("Please check the date!"); }
+
+if (month < 1 || month > 12)
+{ Console.WriteLine("Please check the month!"); }
+
+if (year < 0)
+{ Console.WriteLine("Please check the year!"); }
+
+Console.WriteLine("Please select the date formatting. 1 - YYYY/MM/DD, 2- YYYY.MM.DD");
+string Format = Console.ReadLine();
+
+if (Format == "1")
+{ Console.WriteLine($"Your date is { year}/{ month}/{ day}"); }
+else if (Format == "2")
+{ Console.WriteLine($"Your date is { year}.{ month}.{ day}"); }
